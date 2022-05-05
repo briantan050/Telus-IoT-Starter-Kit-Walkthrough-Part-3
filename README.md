@@ -1,12 +1,12 @@
 # Telus IoT Starter Kit Walkthrough: Part 3
 
-This is part 3 of a 3-part tutorial will help get you started with the TELUS LTE-M IoT Starter Kit:
-* **Part 1** will give you some background on the kit and walk you through the process of getting the kit configured to send data to your own Microsoft Azure instance.
-* **Part 2** will walk you through using the IoT data in a logic app with the Copernicus open access hub API. 
-* **Part 3** will walk you through displaying the IoT data in a Power BI dashboard.
+This is part 3 of a 3-part tutorial that will help get you started with the TELUS LTE-M IoT Starter Kit:
+* **[Part 1](https://github.com/briantan050/Telus-IoT-Starter-Kit-Walkthrough-Part-1/)** will give you some background on the kit and walk you through the process of getting the kit configured to send data to your own Microsoft Azure instance.
+* **[Part 2](https://github.com/briantan050/Telus-IoT-Starter-Kit-Walkthrough-Part-2/)** will walk you through using the IoT data in a logic app with the Copernicus open access hub API. 
+* **[Part 3](https://github.com/briantan050/Telus-IoT-Starter-Kit-Walkthrough-Part-3/)** will walk you through displaying the IoT data in a Power BI dashboard.
 
 ### Displaying IoT data in a Power BI report
-Dashboards are useful tools to provide views of data that can update automatically. For this project, I made a dashboard via a Power BI report. It displayed Temperature and Humidity data recorded by the Nucleo board, displayed on line charts, and also showed the GPS coordinates of the board at the time of recording, displayed on a map.
+Now that you have sensor data being sent to your Azure IoT Hub, it would be useful to be able to display it in a way that can be easily understood by the user. Dashboards are tools to provide views of data that can update automatically. This tutorial will walk you through the process of creating a dashboard in Power BI to display the sensor's temperature and humidity data using line graphs, and the GPS coordinates on a map.
 
 The list of steps is as follows:
 * Configuring Azure
