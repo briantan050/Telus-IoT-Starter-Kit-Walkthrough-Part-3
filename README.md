@@ -1,30 +1,27 @@
 # Telus IoT Starter Kit Walkthrough: Part 3
 
-This is part 2 of a 3-part tutorial will help get you started with the TELUS LTE-M IoT Starter Kit:
+This is part 3 of a 3-part tutorial will help get you started with the TELUS LTE-M IoT Starter Kit:
 * **Part 1** will give you some background on the kit and walk you through the process of getting the kit configured to send data to your own Microsoft Azure instance.
 * **Part 2** will walk you through using the IoT data in a logic app with the Copernicus open access hub API. 
 * **Part 3** will walk you through displaying the IoT data in a Power BI dashboard.
 
-### Requirements for Part 3
-1. [Telus IOT Starter Kit](https://www.avnet.com/shop/us/products/avnet-engineering-services/aes-bg96-iot-sk2-g-3074457345636408150?INTCMP=tbs_low-power-wide-area_button_buy-your-kit)
-2. [Microsoft Azure Account](https://azure.microsoft.com/en-ca/)
-3. [Microsoft Power BI Account](https://powerbi.microsoft.com/en-ca/)
-4. Basic knowledge of Command-Line Interface is an asset
-5. Basic knowledge of SQL is an asset
-
-**Important note**: It is imperative that you use the same email for both the Microsoft Power BI Account and the Microsoft Azure account for this project. Linking the data from the Azure IoT Hub to the Power BI dashboard will only work if the same email is used for both accounts. Please test to make sure that you are able to make both accounts with the same email before starting **Part 1**. Register with [this link](https://powerbi.microsoft.com/en-ca/) (may require a work-email to register). 
-
-  
 ### Displaying IoT data in a Power BI report
 Dashboards are useful tools to provide views of data that can update automatically. For this project, I made a dashboard via a Power BI report. It displayed Temperature and Humidity data recorded by the Nucleo board, displayed on line charts, and also showed the GPS coordinates of the board at the time of recording, displayed on a map.
 
 The list of steps is as follows:
-* Add a consumer group to your IoT hub
-* Create, configure and run a Stream Analytics job
-* Create and configure a Power BI report
-* Share the report
+* Configuring Azure
+* Configuring Power BI
 
-IMPORTANT NOTE: The Stream Analytics job may deplete the user's free credits and eventually cost additional funds to maintain. It must be closely monitored to make sure that it does not incur unwanted fees.
+**IMPORTANT NOTE**: The Stream Analytics job may deplete the user's free credits and eventually cost additional funds to maintain. It must be closely monitored to make sure that it does not incur unwanted fees.
+
+![Power_BI_dashboard](https://user-images.githubusercontent.com/53897474/158296508-7f430d96-0576-4017-bcd5-acc24c4dd862.png)
+
+### Requirements
+1. [Telus IOT Starter Kit](https://www.avnet.com/shop/us/products/avnet-engineering-services/aes-bg96-iot-sk2-g-3074457345636408150?INTCMP=tbs_low-power-wide-area_button_buy-your-kit)
+2. [Microsoft Azure Account](https://azure.microsoft.com/en-ca/)
+3. [Microsoft Power BI Account](https://powerbi.microsoft.com/en-ca/)
+
+**Important note**: It is imperative that you use the same email for both the Microsoft Power BI Account and the Microsoft Azure account for this project. Linking the data from the Azure IoT Hub to the Power BI dashboard will only work if the same email is used for both accounts. Please test to make sure that you are able to make both accounts with the same email before starting **Part 1**. Register with [this link](https://powerbi.microsoft.com/en-ca/) (may require a work-email to register). 
 
 # Configuring Azure
 ### Add a consumer group to your IoT hub
@@ -157,7 +154,7 @@ FROM
 4. Navigating back to the **Query** section of the Stream Analytics Job, you will be able to see the incoming payloads being received. 
 ![image](https://user-images.githubusercontent.com/53897474/158877161-71d2e3b2-3c1e-46eb-9122-d0e87678cd36.png)
 
-# Configure Power BI
+# Configuring Power BI
 ### Create a Power BI report
 A Power BI report displays data from your dataset in a layout that you can design and configure yourself. We will be using the Power BI report to create a dashboard to display the sensor data.
 
